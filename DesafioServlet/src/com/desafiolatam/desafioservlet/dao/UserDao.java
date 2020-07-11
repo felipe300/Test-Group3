@@ -11,11 +11,9 @@ public class UserDao {
 	
 	public int insertUser(UserDTO dto) throws Exception{
 		
-		
 		String sql = "INSERT INTO pg.Usuario ( name, email, pass, isAdmin) VALUES (?, ?, ?, ?)";
 		
 		Connection conexion = null;
-		
 		conexion = DaoUtil.getConnection("jdbc/DesafioServlet");
 		
 		try(PreparedStatement stmt = conexion.prepareStatement(sql)){
@@ -39,6 +37,8 @@ public class UserDao {
 		
 		return 0;
 		
-	} 
+	}
+	
+	
 
 }

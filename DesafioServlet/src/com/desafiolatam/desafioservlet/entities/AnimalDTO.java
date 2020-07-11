@@ -25,7 +25,5 @@ public class AnimalDTO {
 	public void setAnimalYear(String animalYear) {
 		this.animalYear = animalYear;
 	}
-	
-	
-	
+
 }
