@@ -1,5 +1,5 @@
 package com.desafiolatam.desafioservlet.entities;
 
 public class UserDTO {
-	// idUser, name, age, email, birthday, YearNac, isAdmin, animalSigns
+	// idUser, name, age, email, birthday, isAdmin, userName, pass
 }

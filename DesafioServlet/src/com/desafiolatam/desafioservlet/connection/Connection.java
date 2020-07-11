@@ -1,5 +1,17 @@
 package com.desafiolatam.desafioservlet.connection;
 
-public class Connection {
+import java.sql.DriverManager;
 
+public class Connection {
+	protected Connection getConnection(Connection conn) throws Exception{
+		DaoConn dc = new DaoConn();
+		Class.forName("org.postgresql.Driver");
+		conn = (Connection) DriverManager.getConnection(dc.db_conn, dc.db_user, dc.db_pass);
+		return conn;
+	}
+	
+	protected Connection closeConnection(Connection conn) throws Exception{
+		if (conn != null) ((java.sql.Connection) conn).close();
+		return conn;
+	}
 }
