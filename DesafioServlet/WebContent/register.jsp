@@ -26,7 +26,7 @@
                 <label for="inputEmail">Email</label>
               </div>
               <div class="form-label-group">
-                <input type="password" name="password" id="inputPassword" class="form-control" placeholder="contraseña" required>
+                <input type="password" name="pass" id="inputPassword" class="form-control" placeholder="contraseña" required>
                 <label for="inputPassword">Contraseña</label>
               </div>
               <button id="btnRegister" class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Registrarse</button>
