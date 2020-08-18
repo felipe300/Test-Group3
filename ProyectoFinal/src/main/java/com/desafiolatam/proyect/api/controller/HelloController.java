@@ -1,15 +1,9 @@
 package com.desafiolatam.proyect.api.controller;
 
-import java.util.Date;
-import java.util.List;
-import java.util.stream.Collectors;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -20,9 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.desafiolatam.proyect.Util.JwtUtil;
 import com.desafiolatam.proyect.api.model.AuthRequest;
 import com.desafiolatam.proyect.api.model.AuthResponse;
-
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
 
 @RestController
 public class HelloController {
